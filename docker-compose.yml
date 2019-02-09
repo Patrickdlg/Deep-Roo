@@ -1,0 +1,9 @@
+version:     "3"
+
+services:
+  deeproo:
+    image:   deep_roo
+    volumes:
+      - "${CORPUS_DIR}:/opt/deep_roo/data/corpus"
+      - "${MODEL_DIR}:/opt/deep_roo/data/model"
+    tty:     true
